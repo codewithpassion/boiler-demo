@@ -1,12 +1,13 @@
 # Boiler Demo
 
-A [Turborepo](https://turborepo.com) monorepo, managed with Bun workspaces.
+`boiler-demo` is a [Turborepo](https://turborepo.com) monorepo, managed with Bun workspaces.
 
 ## Apps
 
 - [`apps/web`](apps/web) — the [TanStack Start](https://tanstack.com/start) front end, deployed on Cloudflare Workers, with [Cloudflare D1](https://developers.cloudflare.com/d1/) for data. See its [README](apps/web/README.md) for architecture and setup.
 
-There is no auth. To add it, run the `add-clerk` skill (`.claude/skills/add-clerk`).
+Auth is [Clerk](https://clerk.com): `/login` signs in, the header shows the
+signed-in user.
 
 ## Packages
 
